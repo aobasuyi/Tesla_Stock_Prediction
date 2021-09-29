@@ -30,9 +30,9 @@ import math
 from fbprophet import Prophet
 from fbprophet.serialize import model_to_json, model_from_json
 from yfinance import ticker
-from pydantic import BaseModel
+#from pydantic import BaseModel
 
-from model import convert, predict
+#from model import convert, predict
 
 #################################################
 # Flask Setup
