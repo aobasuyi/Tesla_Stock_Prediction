@@ -1,1 +1,2 @@
-web: gunicorn Stock_pred.app:app
+web: gunicorn tesla_pred.app:app
+
