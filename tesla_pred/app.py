@@ -65,17 +65,7 @@ def get_prediction():
 
         with open(filepath, 'r') as fin:
             model = model_from_json(json.load(fin))  # Load model
-
-        # models_dir = os.path.join((__file__))
-
-        # with open(os.path.join(models_dir, f'models/{ticker}.json'), 'r') as fin:
-        #     model = model_from_json(json.load(fin))  # Load model
-
-
-        #Open MSFT or TSLA model from the json file
-        # with open(f'models/{ticker}.json', 'r') as fin:
-        #     model = model_from_json(json.load(fin))  # Load model
-            
+         
         TODAY = datetime.date.today()
 
         future = TODAY + datetime.timedelta(days=days)
