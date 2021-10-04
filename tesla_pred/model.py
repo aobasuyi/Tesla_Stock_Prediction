@@ -38,7 +38,7 @@ from yfinance import ticker
 TODAY = datetime.date.today()
 
 
-def train(ticker, days):
+def train(ticker):
     #ticker= yf.Ticker(ticker)#, days=7)
     # data = yf.download("^GSPC", "2008-01-01", TODAY.strftime("%Y-%m-%d"))
     data = yf.download(ticker, start="2010-01-01", end=TODAY.strftime("%Y-%m-%d"))
@@ -74,7 +74,7 @@ def predict(ticker, days):
     df = pd.DataFrame({"ds": dates})
 
     forecast = model.predict(df)
-    print(f"++++++++++++++forecast++++++++++\n{forecast}")
+    #print(f"++++++++++++++forecast++++++++++\n{forecast}")
 
     return forecast.tail(days).to_dict("records")
         

@@ -71,7 +71,7 @@ def get_prediction():
         df = pd.DataFrame({"ds": dates})
 
         forecast = model.predict(df)
-  
+        model.plot(forecast)
         
 
         response_object = {"ticker": ticker, "forecast": forecast['yhat'].to_dict()}
