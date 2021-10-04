@@ -52,16 +52,29 @@ def home():
 
 @app.route('/predict', methods=['POST'])
 def get_prediction():
-        
-        
+            
 
         ticker= flask.request.form["ticker"]
         days= flask.request.form["day"]
         days = int(days)
 
-        #Open MSFT or TSLA model from the json file
-        with open(f'models/{ticker}.json', 'r') as fin:
+        d = os.path.dirname(os.path.abspath(__file__))  # your script's dir, my_project
+        file = f'models/{ticker}.json'
+        filepath = os.path.join(d, file)
+        filepath = os.path.abspath(filepath) # make it an absolute path
+
+        with open(filepath, 'r') as fin:
             model = model_from_json(json.load(fin))  # Load model
+
+        # models_dir = os.path.join((__file__))
+
+        # with open(os.path.join(models_dir, f'models/{ticker}.json'), 'r') as fin:
+        #     model = model_from_json(json.load(fin))  # Load model
+
+
+        #Open MSFT or TSLA model from the json file
+        # with open(f'models/{ticker}.json', 'r') as fin:
+        #     model = model_from_json(json.load(fin))  # Load model
             
         TODAY = datetime.date.today()
 
