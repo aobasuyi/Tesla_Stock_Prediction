@@ -10,4 +10,4 @@ The stock price and revenue of Tesla were analyzed to predict future stock prici
 The Stock Price Predictor can be accessed via the link:
 <br /> 
 
-**[Stock Price Predictor Dashboard](https://aobasuyi.github.io/Plotly_Biodiversity/)**
+**[Stock Price Predictor Dashboard](https://teslastockpriceprediction1.herokuapp.com/)**
