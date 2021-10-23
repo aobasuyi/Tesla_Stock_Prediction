@@ -6,8 +6,9 @@ The stock price and revenue of Tesla were analyzed to predict future stock prici
 
 **Tools:** Python, Pandas, Visual Studio, Jupyter Notebook.
 <br />
-## Dashboard
+## Demo
 The Stock Price Predictor can be accessed via the link:
 <br /> 
 
-**[Stock Price Predictor Dashboard](https://teslastockpriceprediction1.herokuapp.com/)**
+**Live Demo:** **[Stock Price Predictor Dashboard](https://teslastockpriceprediction1.herokuapp.com/)**
+
