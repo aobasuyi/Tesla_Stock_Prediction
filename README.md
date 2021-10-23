@@ -6,7 +6,8 @@ The stock price and revenue of Tesla were analyzed to predict future stock prici
 
 **Tools:** Python, Pandas, Visual Studio, Jupyter Notebook.
 <br />
-**Dashboard:** The Stock Price Predictor can be accessed via the link:
+## Dashboard
+The Stock Price Predictor can be accessed via the link:
 <br /> 
 
 **[Stock Price Predictor Dashboard](https://aobasuyi.github.io/Plotly_Biodiversity/)**
